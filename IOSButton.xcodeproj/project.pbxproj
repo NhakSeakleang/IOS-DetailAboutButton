@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		4FBBCCB722D47201006FB616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBBCCB622D47201006FB616 /* AppDelegate.swift */; };
 		4FBBCCB922D47201006FB616 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBBCCB822D47201006FB616 /* ViewController.swift */; };
-		4FBBCCBC22D47201006FB616 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FBBCCBA22D47201006FB616 /* Main.storyboard */; };
 		4FBBCCBE22D47206006FB616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FBBCCBD22D47206006FB616 /* Assets.xcassets */; };
 		4FBBCCC122D47206006FB616 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FBBCCBF22D47206006FB616 /* LaunchScreen.storyboard */; };
 		4FBBCCCC22D47207006FB616 /* IOSButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBBCCCB22D47207006FB616 /* IOSButtonTests.swift */; };
 		4FBBCCD722D47207006FB616 /* IOSButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBBCCD622D47207006FB616 /* IOSButtonUITests.swift */; };
+		4FBBCCE522D47446006FB616 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBBCCE422D47446006FB616 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 		4FBBCCB322D47201006FB616 /* IOSButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FBBCCB622D47201006FB616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FBBCCB822D47201006FB616 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4FBBCCBB22D47201006FB616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FBBCCBD22D47206006FB616 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FBBCCC022D47206006FB616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FBBCCC222D47206006FB616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		4FBBCCD222D47207006FB616 /* IOSButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FBBCCD622D47207006FB616 /* IOSButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSButtonUITests.swift; sourceTree = "<group>"; };
 		4FBBCCD822D47207006FB616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FBBCCE422D47446006FB616 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 			children = (
 				4FBBCCB622D47201006FB616 /* AppDelegate.swift */,
 				4FBBCCB822D47201006FB616 /* ViewController.swift */,
-				4FBBCCBA22D47201006FB616 /* Main.storyboard */,
+				4FBBCCE422D47446006FB616 /* MainView.swift */,
 				4FBBCCBD22D47206006FB616 /* Assets.xcassets */,
 				4FBBCCBF22D47206006FB616 /* LaunchScreen.storyboard */,
 				4FBBCCC222D47206006FB616 /* Info.plist */,
@@ -231,7 +231,6 @@
 			files = (
 				4FBBCCC122D47206006FB616 /* LaunchScreen.storyboard in Resources */,
 				4FBBCCBE22D47206006FB616 /* Assets.xcassets in Resources */,
-				4FBBCCBC22D47201006FB616 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FBBCCB922D47201006FB616 /* ViewController.swift in Sources */,
+				4FBBCCE522D47446006FB616 /* MainView.swift in Sources */,
 				4FBBCCB722D47201006FB616 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4FBBCCBA22D47201006FB616 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4FBBCCBB22D47201006FB616 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4FBBCCBF22D47206006FB616 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,7 +431,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gis.IOSButton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gis.IOSBotton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +449,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gis.IOSButton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gis.IOSBotton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

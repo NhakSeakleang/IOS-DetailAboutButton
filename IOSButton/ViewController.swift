@@ -10,11 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private var mainView: MainView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        setUpView()
+        
     }
 
+    func setUpView() {
+        
+        mainView = MainView()
+        self.view = mainView
+        
+        mainView.onBtnClick = self.onBtnClick
+        
+    }
+    
+    @objc func onBtnClick() {
+        
+        print("btnSample click")
+        
+    }
 
 }
 
